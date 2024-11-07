@@ -1,0 +1,84 @@
+/* Contenedor de la tabla */
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 90%;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título de la tabla */
+h1 {
+  font-size: 2.4em;
+  color: #f06292;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffeb3b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Encabezado de la tabla */
+thead {
+  background-color: #ffca28;
+}
+
+th {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Filas de la tabla */
+tbody tr {
+  text-align: center;
+  font-size: 1.1em;
+  color: #444;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Colores alternos en las filas */
+tbody tr:nth-child(even) {
+  background-color: #ffccbc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffe0b2;
+}
+
+/* Hover con cambio llamativo */
+tbody tr:hover {
+  background-color: #ffab91;
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Celdas */
+td {
+  padding: 12px;
+  color: #333;
+  font-weight: 600;
+}

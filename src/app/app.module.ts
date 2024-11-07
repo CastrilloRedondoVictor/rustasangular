@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app.routing';
 import { MenuComponentComponent } from './components/menu-component/menu-component.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { NumdobleComponent } from './components/numdoble/numdoble.component';
+import { MenutablaComponentComponent } from './components/menutabla-component/menutabla-component.component';
+import { TablamultiplicarComponent } from './components/tablamultiplicar/tablamultiplicar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { NumdobleComponent } from './components/numdoble/numdoble.component';
     MenuComponentComponent,
     NotfoundComponent,
     NumdobleComponent,
+    MenutablaComponentComponent,
+    TablamultiplicarComponent,
   ],
   imports: [
     BrowserModule,

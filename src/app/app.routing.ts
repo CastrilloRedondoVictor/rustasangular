@@ -22,6 +22,7 @@ import { MusicaComponent } from './components/musica/musica.component';
 import { CineComponent } from './components/cine/cine.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { NumdobleComponent } from './components/numdoble/numdoble.component';
+import { TablamultiplicarComponent } from './components/tablamultiplicar/tablamultiplicar.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'cine', component: CineComponent },
   { path: 'numdoble', component: NumdobleComponent },
   { path: 'numdoble/:num', component: NumdobleComponent },
+  { path: 'tablamultiplicar/:num', component: TablamultiplicarComponent },
   { path: '**', component: NotfoundComponent },
 
 ];
