@@ -1,0 +1,8 @@
+<h1>Número Doble</h1>
+
+<h2 *ngIf="numero">{{ doble }}</h2>
+<h2 *ngIf="!numero">Sin número</h2>
+
+<button (click)="enviarNum(1)">1</button>
+<button (click)="enviarNum(2)">2</button>
+<button (click)="enviarNum()">No number</button>
